@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff;
+}
+.right, .left{
+    display: inline-block;
+    vertical-align: top;
+}
+.right{
+    width: 80%;
+    text-align: center;
+    font-size: 34px;
+}
+/*HEADER*/
+header{
+    position: relative;
+    width: 180px;
+    height: 100vh;
+    background-color: rgb(1, 18, 36);
+    transition: .5s;
+}
+/*LINK*/
+a{
+    text-decoration: none;
+}
+header section{
+    border-bottom: #fcfcfc 2px solid;
+    padding-bottom: 12px;
+}
+header section a{
+    display: block;
+    padding-top: 22px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+/*LOGO*/
+.logo{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 12px;
+    width: 120px;
+    transition: .5s;
+}
+.caption{
+    display: block;
+    font-size: 24px;
+}
+nav, li, a{
+    display: block;
+}
+li a{
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #fcfcfc;
+    padding: 13px 5px 15px 13px;
+}
+/*IMG*/
+li a img{
+    display: inline-block;
+    width: 33px;
+    padding: 0 12px 0 20px;
+}
+.img-php{
+    margin-left: 100px;
+}
+/*OVER*/
+li a:hover, li a:focus{
+    background-color: #222;
+    outline: none;
+    color: #fcfcfc;
+}
+.side_menu_icon{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: -6px;
+    right: 0;
+}
+/*SETA*/
+.top_angle, .bottom_angle{
+    display: block;
+    position: absolute;
+    background-color: #dfdfdf;
+    width: 12px;
+    height: 3.5px;
+    top: 18px;
+    text-align: center;
+    right: 0;
+    transition: .5s;
+}
+.top_angle{
+    transform: rotate(45deg);
+}
+.bottom_angle{
+    transform: rotate(-45deg);
+    top: 11.5px;
+}
+
+.top_angle_collapse{
+    transform: rotate(-222deg);
+}
+.bottom_angle_collapse{
+    transform: rotate(222deg);
+}
+.side_menu_icon:hover{
+    cursor: pointer;
+}
+.side_menu_icon span{
+    background-color: #222;
+}
+.side_menu_icon:hover span{
+    background-color: #555;
+}
+h1{
+    margin-top: 56px;
+    margin-bottom: 56px;
+    font-size: 54px;
+    font-weight: 100;
+    color: brown;
+    text-align: center;
+}
+/*RESPONSIVE*/
+@media (max-width: 930px) {
+    header{
+        width: 65px;
+    }
+    .side_menu_icon{
+        display: none;
+    }
+    .logo{
+        width: 40px;
+    }
+    .caption{
+        font-size: 65%;
+    }
+    .link_text{
+        display: none;
+    }
+}
+
+@media (max-width: 348px) {
+    .right{
+        width: 70%;
+    }
+    h1{
+        font-size: 30px;
+    }
+}
